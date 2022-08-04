@@ -1,0 +1,634 @@
+:root {
+
+ --very-dark-blue: hsl(243, 87%, 12%);
+ --desaturated-blue: hsl(238, 22%, 44%);
+
+
+ --bright-blue: hsl(224, 93%, 58%);
+ --moderate-cyan: hsl(170, 45%, 43%);
+
+
+ --light-grayish-blue: hsl(240, 75%, 98%);
+ --light-gray: hsl(0, 0%, 75%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo {
+    width: 5em;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 14px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--very-dark-blue);
+    font-size: 13px;
+    font-weight: 20px;
+}
+
+/* here start the main part */
+
+.main {
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-areas: 
+    "first__image"
+    "form1"
+    "productive__section"
+    "form2"
+    "early__acces";
+}
+
+/* Ilustration 1 style */
+
+.ilustration1 {
+    width: 100%;
+    grid-area: first__image;
+    margin-top: 4em;
+}
+
+.ilustration1 img {
+    width: 100%;
+}
+
+/* first form container items align */
+
+.first__form-container {
+    grid-area: form1;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* here should go text container in case we need it  */
+
+/* .first__section-text-container */
+
+
+
+/* text style */
+
+.first__section-text-container h2 {
+    color: var(--very-dark-blue);
+    font-size: 26px;
+}
+
+.first__section-text-container p {
+    font-size: 15px;
+    line-height: 1.2;
+    color: var(--very-dark-blue);
+}
+
+/* form general properties */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 0 auto;
+    margin-top: 2em;
+    width: 90%;
+}
+
+/* form items style */
+
+.form input {
+    padding: 0.6em;
+}
+
+.form button {
+    padding: 0.7em;
+    background: var(--bright-blue);
+    color: var(--light-grayish-blue);
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 5em;
+}
+
+/* ilustration 2 */
+
+.productive__section-container {
+    grid-area: productive__section;
+    background-image: url(./images/bg-curve-mobile.svg);
+    background-repeat: no-repeat;
+}
+
+.productive__div-container {
+    background-color: var(--light-grayish-blue);
+    padding-bottom: 60px;
+    
+}
+
+.ilustration2 {
+    margin-top: 2em;
+}
+
+.ilustration2 img {
+    width: 100%;
+}
+
+/* second image-section container (productive area) */
+
+.second__image-content {
+    margin-top: 4em;
+}
+
+.second__section-text-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.second__section-text-container h3 {
+    color: var(--very-dark-blue);
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.second__section-text-container p {
+    font-size: 15px;
+    color: var(--light-gray);
+}
+
+/* fylo container and style */
+
+.fylo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3em;
+    position: relative;
+    margin: 2em;
+}
+
+.fylo h3 {
+    font-size: 14px;
+}
+
+.fylo div {
+    width: 1.2em;
+}
+
+.fylo img {
+    width: 100%;
+}
+
+.fylo::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 10em;
+    background: var(--moderate-cyan);
+    margin-top: 1.8em;
+}
+
+/* card container and style */
+
+.card {
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.card__items-margin {
+    width: 80%;
+    margin: 0 auto;
+    margin-left: 2em;
+}
+
+.quotes__container {
+    padding-top: 2em;
+}
+
+.card p {
+    margin-top: 0;
+    font-size: 13px;
+}
+
+.card__img-content {
+    display: flex;
+    gap: 0.5em;
+}
+
+.card__img-content figure {
+    width: 40px;
+    margin: 0;
+    margin-bottom: 2em;
+}
+
+.card__img-content img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.card__img-text {
+    margin: 0;
+}
+
+.card__img-text h3 {
+    margin: 0;
+    color: var(--very-dark-blue);
+    font-size: 14px;
+    align-self: flex-end;
+}
+
+.card__img-text p {
+    font-size: 10px;
+    margin-bottom: 3em;
+}
+
+/* early access section and styles */
+
+.early__acces {
+    grid-area: early__acces;
+    background: var(--desaturated-blue);
+    text-align: center;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.early__access-text {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.early__access-text h3 {
+    color: var(--light-grayish-blue);
+}
+
+.early__access-text p {
+    color: var(--light-grayish-blue);
+    font-weight: 100;
+}
+
+.form2__container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.form2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+    margin: 0 auto;
+
+}
+
+.form2 input {
+    width: 92%;
+    padding: 0.6em;
+    border: none;
+    border-radius: 2px;
+}
+
+.form2 button {
+    width: 100%;
+    padding: 0.8em;
+    color: #fff;
+    background: var(--bright-blue);
+    border: none;
+    border-radius: 2px;
+}
+
+/* footer */
+
+.footer {
+    background: var(--very-dark-blue);
+    padding-top: 3em;
+    padding-bottom: 4em;
+}
+
+.footer__logo {
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+.footer__logo img {
+    display: block;
+}
+
+.phone__container {
+    padding-bottom: 14px;
+}
+
+.footer__margin {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text__footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.footer__text-items {
+    text-decoration: none;
+    color: var(--light-grayish-blue);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+
+
+
+@media screen and (min-width: 1024px){
+    nav {
+        justify-content: space-between;
+    }
+
+    .main {
+        width: 100%;
+        grid-template-areas: 
+        "form1 first__image first__image first__image first__image"
+        "form1 first__image first__image first__image first__image"
+        "productive__area productive__area second__image second__image second__image"
+        "productive__section productive__section productive__section productive__section productive__section"
+        "early__acces early__acces early__acces early__acces early__acces";
+    }
+
+    .first__form-container {
+        text-align: start;
+        margin: 0 auto;
+        margin-bottom: 2em;
+        align-self: center;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+    
+    /* text style */
+    
+    .first__section-text-container h2 {
+        font-size: 2.2em;
+    }
+
+    .first__section-text-container p {
+        font-size: 18px;
+    }
+    
+    /* form general properties */
+    .form {
+        flex-direction: row;
+        gap: 0.7em;
+        margin: 0 0;
+        margin-top: 1em;
+    }
+    
+    /* form items style */
+    
+    .form input {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    
+    .form button {
+        padding: 0.7em;
+        padding-right: 6em;
+        padding-left: 6em;
+        margin-bottom: 0;
+    }
+
+    /* Ilustration 1 style */
+
+    .ilustration1 {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 3em;
+    }
+
+    /* second image-section container (productive area) */
+
+.second__image-content {
+    width: 50%;
+    margin: 0 auto;
+    grid-area: productive__area;
+    margin-top: 2em;
+}
+
+.second__section-text-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.second__section-text-container h3 {
+    text-align: start;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.second__section-text-container p {
+    width: 90%;
+    font-size: 15px;
+    color: var(--very-dark-blue);
+}
+
+/* fylo container and style */
+
+.fylo {
+    justify-content: flex-start;
+    margin: 0;
+}
+
+.fylo h3 {
+    font-size: 14px;
+}
+
+.fylo div {
+    width: 1.2em;
+}
+
+/* card container and style */
+
+.card {
+    width: 50%;
+    margin: 0 4em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    background-color: #fff;
+}
+
+.card__items-margin {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card__img-content {
+    display: flex;
+    gap: 0.5em;
+}
+
+.card__img-text {
+    margin: 0;
+}
+
+
+/* ilustration 2 */
+
+.productive__section-container {
+    grid-area: productive__section;
+    margin-top: 6em;
+    background-repeat: no-repeat;
+    background-image: url(./images/bg-curve-desktop.svg);
+}
+
+
+.productive__div-container {
+    margin-top: 5em;
+    background-color: var(--light-grayish-blue);
+    padding-top: 5em;
+    display: flex;
+    
+}
+
+.ilustration2 {
+    width: 50%;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    margin-right: 5em;
+    background-repeat: no-repeat;
+    justify-self: flex-end;
+    order: 2;
+}
+
+/* early access */
+.early__acces {
+    display: flex;
+    padding: 3em 0;
+    justify-content: space-evenly;
+    align-items: center;
+    /* text-align: start; */
+}
+
+.early__access-text {
+    width: 30%;
+    margin: 0 auto;
+    margin-left: 3em;
+    padding-top: 0;
+    text-align: start;
+}
+
+.early__access-text h3 {
+    color: var(--light-grayish-blue);
+    font-size: 1.5em;
+}
+
+.early__access-text p {
+    font-size: 14px;
+    color: var(--light-grayish-blue);
+    font-weight: 100;
+}
+
+.form2__container {
+    width: 30%;
+    margin: 0 auto;
+    margin-right: 3em;
+}
+
+.form2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.6em;
+
+}
+
+.form2 input {
+    width: 80%;
+    padding: 0.6em;
+    border: none;
+    border-radius: 2px;
+}
+
+.form2 button {
+    width: 40%;
+    padding: 0.8em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: #fff;
+    background: var(--bright-blue);
+    border: none;
+    border-radius: 2px;
+    }
+
+    
+/* footer */
+
+.footer {
+    background: var(--very-dark-blue);
+    padding-top: 4em;
+    padding-bottom: 5em;
+}
+
+.footer__margin {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 0 0;
+}
+
+.text__footer-container {
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.sex {
+    align-self: center;
+}
+
+.sex h2 {
+    font-size: 50px;
+    margin: 0;
+    text-transform: uppercase;
+    color: #252839;
+    -webkit-text-stroke: 0.1vw #383d52; 
+    position: relative;
+    
+}
+
+.sex h2::before {
+    content: '';
+    width: 1px;
+    height: 50px;
+    margin-right: 23px;
+    background: #34ff43;
+    position: absolute;
+    animation-name: comeandgo;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes comeandgo {
+    from{transform: translate(0);}
+    to{transform: translate(160px);}
+}
+
+
+}
+
+
+
+
+
